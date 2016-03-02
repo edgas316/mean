@@ -35,3 +35,12 @@ user.save(function (error) {
         process.exit(0)
     })
 })
+// this will paiste 5.000.000 titles into books collecion 
+// for (var i = 0; i < 5000000; ++i) { db.books.insert({title: '' + i});}
+// this will create index in names collection for name field
+// db.books.createIndex({ title: 1 })
+
+// will paiste 5.000.000 titles into books collecion with array of values for each title
+// for (var i = 0; i < 5000000; ++i) { db.books.insert({title: ['' + i]});}
+// this will create multykey index for every single array in every single document
+// db.books.createIndex({ title: 1 })

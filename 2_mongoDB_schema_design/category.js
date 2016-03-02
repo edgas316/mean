@@ -6,10 +6,10 @@ var categorySchema = {
         type: String,
         ref: 'Category'
     },
-    ancestors: {
+    ancestors: [{
         type: String,
         ref: 'Category'
-    }
+    }]
 };
 
 // Creating new Schema
