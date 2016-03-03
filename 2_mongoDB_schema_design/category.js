@@ -16,7 +16,7 @@ var categorySchema = {
 module.exports = new mongoose.Schema(categorySchema);
 
 // asigning properties to new Schema
-modyle.exports.categorySchema = categorySchema;
+module.exports.categorySchema = categorySchema;
 
 // ========================================================
 // To query from the DB you may use the following pattern
