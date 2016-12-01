@@ -4,6 +4,8 @@ var status = require('http-status');
 
 module.exports = function(wagner) {
   var api = express.Router();
+    
+    api.use(bodyparser.json())
 
   api.get('/product/id/:id', wagner.invoke(function(Product) {
     return function(req, res) {
